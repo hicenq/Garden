@@ -11,13 +11,14 @@ import javax.persistence.Id;
 @Entity
 public class Garden {
 
+
     private @Id
     @GeneratedValue
     Long id;
-    private Long job;
-    private String lastName;
+    private Long jobId;
     private Long addressId;
-    private String phoneNumber;
-    private String email;
+    private Long gardenerId;
+    private Integer surface;
+    private Long stockId;
 
 }

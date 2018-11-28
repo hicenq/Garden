@@ -14,8 +14,9 @@ public class Client {
     Long id;
     private String firstName;
     private String lastName;
+    private String email;
     private Long addressId;
-    private Long gardenerId;
-    private Integer surface;
-    private Long stockId;
+    private Integer phoneNumber;
+
+
 }
