@@ -2,7 +2,6 @@ package pw.db.garden.model;
 
 
 import lombok.Data;
-import sun.security.util.Password;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,6 +16,6 @@ public class User {
     Long id;
     private String username;
     private String email;
-    private Password password;
+    private String password;
 
 }
