@@ -16,7 +16,7 @@ public class JobController {
     @Autowired
     private JobRepository jobRepository;
 
-    @GetMapping("/client/{clientId}/job")
+    @GetMapping("/clients/{clientId}/jobs")
     public List<Job> getJobsByClientId(@PathVariable Long clientId) {
         return jobRepository.findByClientId(clientId);
     }
