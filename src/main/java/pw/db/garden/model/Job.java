@@ -16,7 +16,7 @@ public class Job {
     //@JoinColumn(name = "client_id")
     private Long clientId;
     private Date date;
-    private String jobType;
+    private Long jobTypeId;
     private String info;
     private String status;
 

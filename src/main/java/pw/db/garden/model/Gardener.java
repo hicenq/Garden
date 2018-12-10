@@ -16,4 +16,5 @@ public class Gardener {
     Long id;
     private String firstName;
     private String lastName;
+    private boolean isAdministrator;
 }
