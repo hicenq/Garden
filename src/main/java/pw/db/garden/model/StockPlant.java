@@ -1,21 +1,19 @@
 package pw.db.garden.model;
 
-
 import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+
 @Data
 @Entity
-public class User {
+public class StockPlant {
 
-    private @Id
-    @GeneratedValue
-    Long id;
-    private String username;
-    private String email;
-    private String password;
+    private @Id @GeneratedValue Long id;
+    private Long plantId;
+    private Long stockId;
+    private Long amount;
 
 }

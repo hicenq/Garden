@@ -15,6 +15,6 @@ public class Plant {
     private @Id @GeneratedValue Long id;
     private String name;
     private String info;
-    private String species;
+    private String speciesId;
 
 }

@@ -14,7 +14,5 @@ public class Stock {
     private @Id @GeneratedValue Long id;
     private String name;
     private Long addressId;
-    //TODO stock_plants
-    private Long plantId;
 
 }
