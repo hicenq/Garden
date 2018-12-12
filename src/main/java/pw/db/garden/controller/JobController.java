@@ -23,11 +23,7 @@ public class JobController {
 
     @GetMapping("/clients/{clientId}/jobs")
     public List<Job> getJobsByClientId(@PathVariable Long clientId) {
-        logger.warn("Running code...");
-        logger.debug("Code execution complete.");
-        logger.trace("In doTask");
-        logger.trace("doTask complete");
-        logger.info("Class instance created at {}",
+        logger.info("Receive get at {}",
                 DateFormat.getInstance().format(new Date()));
         return jobRepository.findByClientId(clientId);
     }
