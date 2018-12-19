@@ -15,11 +15,11 @@ public class ClientController {
     @Autowired
     private ClientRepository clientRepository;
 
-    @GetMapping("/clients/{firstName}")
+    @GetMapping("/clients/firstName/{firstName}")
     public List<Client> getClientsByFirstName(@PathVariable String firstName) {
         return clientRepository.findByFirstName(firstName);
     }
-    @GetMapping("/clients/{email}")
+    @GetMapping("/clients/email/{email}")
     public List<Client> getClientsByEmail(@PathVariable String email) {
         return clientRepository.findByEmail(email);
     }

@@ -15,7 +15,7 @@ public class GardenerController {
     @Autowired
     private GardenerRepository gardenerRepository;
 
-    @GetMapping("/gardeners/{firstName}")
+    @GetMapping("/gardeners/firstName/{firstName}")
     public List<Gardener> getGardenersByFirstName(@PathVariable String firstName) {
         return gardenerRepository.findByFirstName(firstName);
     }

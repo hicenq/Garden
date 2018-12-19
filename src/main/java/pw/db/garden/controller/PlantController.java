@@ -16,7 +16,7 @@ public class PlantController {
     @Autowired
     private PlantRepository plantRepository;
 
-    @GetMapping("/plants/{name}")
+    @GetMapping("/plants/name/{name}")
     public List<Plant> getPlantsByName(@PathVariable String name) {
         return plantRepository.findByName(name);
     }

@@ -15,7 +15,7 @@ public class StockController {
     @Autowired
     private StockRepository stockRepository;
 
-    @GetMapping("/stocks/{name}")
+    @GetMapping("/stocks/name/{name}")
     public List<Stock> getSpeciesByName(@PathVariable String name) {
         return stockRepository.findByName(name);
     }

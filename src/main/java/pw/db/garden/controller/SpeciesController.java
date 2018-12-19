@@ -16,7 +16,7 @@ public class SpeciesController {
     @Autowired
     private SpeciesRepository speciesRepository;
 
-    @GetMapping("/species/{name}")
+    @GetMapping("/species/name/{name}")
     public List<Species> getSpeciesByName(@PathVariable String name) {
         return speciesRepository.findByName(name);
     }
