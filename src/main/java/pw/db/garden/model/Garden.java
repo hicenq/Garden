@@ -15,7 +15,6 @@ public class Garden {
     private @Id
     @GeneratedValue
     Long id;
-    private Long jobId;
     private Long addressId;
     private Long gardenerId;
     private Integer surface;

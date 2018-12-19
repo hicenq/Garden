@@ -15,6 +15,7 @@ public class Job {
     //@ManyToOne(fetch = FetchType.LAZY, optional = false)
     //@JoinColumn(name = "client_id")
     private Long clientId;
+    private Long gardenId;
     private Date date;
     private Long jobTypeId;
     private String info;
